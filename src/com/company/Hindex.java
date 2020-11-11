@@ -17,6 +17,7 @@ public class Hindex {
     // Input: Array of positive integers representing the citation
     // counts of each of the author's papers.
     public static void solution(int[] numbers){
+        System.out.println("This is h-index solution");
         Arrays.sort(numbers);
         int cache = numbers[0];
         int len = numbers.length;
