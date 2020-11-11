@@ -21,8 +21,13 @@ public class Hindex {
         int cache = numbers[0];
         int len = numbers.length;
         for (int i = 0; i < len; i++){
-            // Code Here
+            if (numbers[i] > len-i) {
+                break;
+            }
+            else {
+                cache = numbers[i];
+            }
         }
-        System.out.println(numbers[0]);
+        System.out.println("Researcher's h-index is: " + cache);
     }
 }
