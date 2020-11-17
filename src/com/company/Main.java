@@ -2,6 +2,14 @@ package com.company;
 
 public class Main {
 
+    public static void printTestCase(int[] test){
+        System.out.println("Printing Original Test Case");
+        for (int i =0; i< test.length; i++){
+            System.out.print(test[i] + " ");
+        }
+        System.out.println();
+    }
+
     public static void hIndexSol() {
         int[] test_case_1  = {1, 4, 1, 4, 2, 1, 3, 5, 6};
         int[] test_case_2 = {1, 1, 1};
@@ -10,7 +18,7 @@ public class Main {
 
     public static void orderEvenSol() {
         int[] test_case_1  = {1, 4, 1, 4, 2, 1, 3, 5, 6};
-        // int[] test_case_2 = {1, 1, 1};
+        // int[] test_case_2 = {1, 1, 2};
 
         System.out.println("Printing Original Test Case");
         for (int i =0; i< test_case_1.length; i++){
@@ -35,12 +43,39 @@ public class Main {
 
     }
 
+    public static void bubbleAsc() {
+        int[] test_case_1  = {1, 4, 1, 4, 2, 1, 3, 5, 6};
+        System.out.println("Bubble Sort in Ascending Order");
+        printTestCase(test_case_1);
+        int[] getBubbleAns = Bubble.ascending(test_case_1);
+        for (int i=0; i<getBubbleAns.length; i++){
+            System.out.print(getBubbleAns[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void selectionAsc() {
+        int[] test_case_1  = {1, 4, 1, 4, 2, 1, 3, 5, 6};
+        System.out.println("Selection Sort in Ascending Order");
+        printTestCase(test_case_1);
+        int[] getSelectAns = Selection.ascending(test_case_1);
+        for (int i=0; i<getSelectAns.length; i++){
+            System.out.print(getSelectAns[i] + " ");
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         // h-index solution
-        hIndexSol();
-        // Bubble sort algorithm
-        // Order Even Odd
-        orderEvenSol();
+        // hIndexSol();
 
+        // Bubble sort algorithm
+        //bubbleAsc();
+
+        // Order Even Odd
+        // orderEvenSol();
+
+        // Selection sort algorithm
+        selectionAsc();
     }
 }

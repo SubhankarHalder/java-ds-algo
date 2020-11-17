@@ -29,7 +29,8 @@ public class OrderEvenOdd {
             else {
                 int temp = numbers[nextEven];
                 numbers[nextEven] = numbers[nextOdd];
-                numbers[nextOdd--] = temp;
+                numbers[nextOdd] = temp;
+                nextOdd--;
             }
 
         }
