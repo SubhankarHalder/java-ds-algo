@@ -65,6 +65,17 @@ public class Main {
         System.out.println();
     }
 
+    public static void insertionAsc() {
+        int[] test_case_1  = {1, 4, 1, 4, 2, 1, 3, 5, 6};
+        System.out.println("Insertion Sort in Ascending Order");
+        printTestCase(test_case_1);
+        int[] getInsertAns = Insertion.ascending(test_case_1);
+        for (int i=0; i<getInsertAns.length; i++){
+            System.out.print(getInsertAns[i] + " ");
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         // h-index solution
         // hIndexSol();
@@ -76,6 +87,9 @@ public class Main {
         // orderEvenSol();
 
         // Selection sort algorithm
-        selectionAsc();
+        // selectionAsc();
+
+        // Insertion sort algorithm
+        insertionAsc();
     }
 }
