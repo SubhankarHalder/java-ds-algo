@@ -14,7 +14,7 @@ public class Selection {
                 }
 
             }
-            if (swap == true){
+            if (swap){
                 int temp = numbers[i];
                 numbers[i] = min;
                 numbers[idxCache] = temp;
